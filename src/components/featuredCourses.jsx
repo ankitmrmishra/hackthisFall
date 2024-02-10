@@ -1,24 +1,24 @@
 import React from "react";
 import CourseCard from "./courseCard";
 import { useEffect, useState } from "react";
-import sanityClient  from "./client";
+// import sanityClient  from "./client";
 
 function featuredCourses() {
-  const [course, setCourses] = useState(null);
-  useEffect(() => {
-    sanityClient
-      .fetch(
-      `*[_type == "product"]{
-  price,
-    "slug": slug.current,
-    description,
-    "slug":slug.current,
-    "images": images[0].asset->url
-}`
-    )
-      .then((data) => setCourses(data))
-    .catch(console.error)
-  })
+//   const [course, setCourses] = useState(null);
+//   useEffect(() => {
+//     sanityClient
+//       .fetch(
+//       `*[_type == "product"]{
+//   price,
+//     "slug": slug.current,
+//     description,
+//     "slug":slug.current,
+//     "images": images[0].asset->url
+// }`
+//     )
+//       .then((data) => setCourses(data))
+//     .catch(console.error)
+//   })
   return (
     <div
       id='Courses'
@@ -37,11 +37,11 @@ function featuredCourses() {
       </div>
 
       <div className='courseshere lg:grid grid-cols-3 gap-5 flex flex-col items-center align-middle justify-center lg:p-[10rem]'>
-        {course && course.map((course, index) => (
+        {/* {course && course.map((course, index) => (
   <div key={index}>
-    <CourseCard description={course.description} image={course.image} price={course.price} />
-  </div>
-))}
+    <CourseCard description={course.description} image={course.image} price={course.price} /> */}
+  {/* </div> */}
+{/* ))} */}
       </div>
     </div>
   );

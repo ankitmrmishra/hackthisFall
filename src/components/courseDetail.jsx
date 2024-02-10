@@ -16,9 +16,15 @@ export default function App() {
             </span>{" "}
             |
           </p>
-          <button className="hover:bg-blue-500 text-sm py-3 bg-blue-900 text-white md:mr-[1600px] md:ml-8 mx-3 mt-8 rounded-md">
+          <div className="flex   justify-start items-start align-middle">
+<button className="hover:bg-blue-500 text-sm py-3 bg-blue-900 text-white  mx-10 mt-8 p-6 rounded-md">
             Enroll for Free
           </button>
+          <button className="hover:bg-blue-500 text-sm py-3 bg-blue-900 text-white  mx-10 mt-8 p-6 rounded-md">
+            Go Live
+          </button>
+          </div>
+          
           <p className="ml-3 mt-2 md:mt3 text-xs text-gray-700 hover:text-blue md:ml-8">
             Scholarship Available
           </p>
