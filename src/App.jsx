@@ -7,23 +7,30 @@ import Testimonials from "./components/testimonials";
 import Footer from "./components/Footer";
 import SignInSide from "./components/signin";
 import SignUp from "./components/signup";
+import CourseDetail from "./components/courseDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/login' element={<SignInSide />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/' element={<div>
-          <Navbar />
-          <Herosection />
-          <Company />
-          <FeaturedCourses />
-          <Details />
-          <Testimonials />
-          <Footer />
-        </div>} />
+        <Route path="/login" element={<SignInSide />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route
+          path="/"
+          element={
+            <div>
+              <Navbar />
+              <Herosection />
+              <Company />
+              <FeaturedCourses />
+              <Details />
+              <Testimonials />
+              <Footer />
+            </div>
+          }
+        />
+        <Route path="/detail" element={<CourseDetail />} />
       </Routes>
     </BrowserRouter>
   );
