@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "enrolledStudents": 8000,
+      "courseTitle": "Advanced Physics",
+      "instructor": "Prof. Jane Smith",
+      "instructorDescription": "An esteemed physics professor with a wealth of knowledge in theoretical and experimental physics. Known for groundbreaking research and a passion for teaching.",
+      "courseDescription": "Dive deep into advanced topics in physics, covering quantum mechanics, relativity, and modern applications. Gain a profound understanding of the fundamental principles that govern the physical world.",
+      "totalTime": "Approx 60 hours to complete"
+    },
+    {
+      "id": 2,
+      "enrolledStudents": 12000,
+      "courseTitle": "Web Development Bootcamp",
+      "instructor": "John Doe",
+      "instructorDescription": "A seasoned web developer with years of industry experience. Passionate about sharing knowledge and helping students build practical skills in web development.",
+      "courseDescription": "Embark on a journey to master web development. Learn HTML, CSS, JavaScript, and popular frameworks to build responsive and dynamic web applications. Get hands-on experience with real-world projects.",
+      "totalTime": "Approx 80 hours to complete"
+    },
+    {
+      "id": 3,
+      "enrolledStudents": 5000,
+      "courseTitle": "Data Science Fundamentals",
+      "instructor": "Dr. Alice Johnson",
+      "instructorDescription": "A data scientist and educator with expertise in statistical analysis, machine learning, and data visualization. Dedicated to providing a solid foundation in data science.",
+      "courseDescription": "Explore the world of data science and analytics. Acquire skills in data manipulation, analysis, and visualization using popular tools and techniques. Apply your knowledge to solve real-world data challenges.",
+      "totalTime": "Approx 50 hours to complete"
+    },
+    {
+      "id": 4,
+      "enrolledStudents": 15000,
+      "courseTitle": "Digital Marketing Essentials",
+      "instructor": "Marketing Guru",
+      "instructorDescription": "An experienced marketing professional with a proven track record in digital marketing strategies. Ready to guide students through the essentials of promoting products in the digital age.",
+      "courseDescription": "Master the essentials of digital marketing. Learn strategies for online advertising, social media marketing, SEO, and analytics. Develop a comprehensive understanding of how to promote products and services in the digital age.",
+      "totalTime": "Approx 45 hours to complete"
+    },
+    {
+      "id": 5,
+      "enrolledStudents": 9000,
+      "courseTitle": "Graphic Design for Beginners",
+      "instructor": "Creative Artist",
+      "instructorDescription": "A talented and creative graphic designer with a passion for visual communication. Ready to inspire beginners and help them develop essential design skills.",
+      "courseDescription": "Unlock your creativity with graphic design. Explore design principles, color theory, and popular design tools. Create visually stunning graphics and develop a foundation for pursuing a career in graphic design.",
+      "totalTime": "Approx 30 hours to complete"
+    }
+  ]
+  

@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./components/navbar";
 import Herosection from "./components/herosection";
 import Company from "./components/company";
@@ -9,7 +10,7 @@ import SignInSide from "./components/signin";
 import SignUp from "./components/signup";
 import CourseDetail from "./components/courseDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import courseData from "./components/courseData.json";
 function App() {
   return (
     <BrowserRouter>
@@ -23,14 +24,17 @@ function App() {
               <Navbar />
               <Herosection />
               <Company />
-              <FeaturedCourses />
+              <FeaturedCourses courses={courseData} />
               <Details />
               <Testimonials />
               <Footer />
             </div>
           }
         />
-        <Route path="/detail" element={<CourseDetail />} />
+        <Route
+          path="/detail/:id"
+          element={<CourseDetail courses={courseData} />}
+        />
       </Routes>
     </BrowserRouter>
   );
