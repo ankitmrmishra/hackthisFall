@@ -33,7 +33,8 @@ export default function SignUp() {
         body: JSON.stringify({
           email: data.get('email'),
           password: data.get('password'),
-          username: data.get('username')
+          username: data.get('username'),
+          isAdmin:data.get('isAdmin')
         }),
       });
 
@@ -123,6 +124,16 @@ export default function SignUp() {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                />
+              </Grid><Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  name="isAdmin"
+                  label="ADMIN"
+                 
+                  id="isAdmin"
+                  
                 />
               </Grid>
               <Grid item xs={12}>

@@ -8,6 +8,7 @@ import Testimonials from "./components/testimonials";
 import Footer from "./components/Footer";
 import SignInSide from "./components/signin";
 import SignUp from "./components/signup";
+// import TokBoxVideoChat from "./video"
 import CourseDetail from "./components/courseDetail";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import courseData from "./components/courseData.json";
@@ -28,6 +29,7 @@ function App() {
               <Details />
               <Testimonials />
               <Footer />
+              {/* <TokBoxVideoChat/> */}
             </div>
           }
         />

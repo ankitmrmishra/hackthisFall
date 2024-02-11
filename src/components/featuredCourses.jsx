@@ -1,6 +1,8 @@
 import React from "react";
 import CourseCard from "./courseCard";
-function featuredCourses() {
+import { Link } from "react-router-dom";
+
+function FeaturedCourses({ courses }) {
   return (
     <div
       id="Courses"
@@ -18,12 +20,12 @@ function featuredCourses() {
         </span>
       </div>
 
-      <div className='courseshere lg:grid grid-cols-3 gap-5 flex flex-col items-center align-middle justify-center lg:p-[10rem]'>
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
+      <div className="courseshere lg:grid grid-cols-3 gap-5 flex flex-col items-center align-middle justify-center lg:p-[10rem]">
+        {courses.map((course) => (
+          <Link to={`/detail/${course.id}`} key={course.id}>
+            <CourseCard course={course} />
+          </Link>
+        ))}
       </div>
     </div>
   );
